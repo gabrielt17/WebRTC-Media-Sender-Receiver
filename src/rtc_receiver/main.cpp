@@ -8,6 +8,8 @@
 #include <functional>
 #include <memory>
 #include <utility>
+#include <sys/socket.h>
+#include <netinet/in.h>
 
 #ifdef _WIN32
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
@@ -29,7 +31,6 @@ uint16_t port = defaultPort;
 
 template <class T>
 std::weak_ptr<T> make_weak_ptr(std::shared_ptr<T> ptr) { return std::weak_ptr<T>(ptr); }
-
 
 /// all connected clients
 std::unordered_map<std::string, std::shared_ptr<Client>> clients{};
@@ -73,7 +74,8 @@ void wsOnMessage(json message, rtc::Configuration config, std::shared_ptr<rtc::W
 
         pc->setRemoteDescription(offer);
         auto answer = pc->localDescription();
-        if (!answer || answer->type() != rtc::Description::Type::Answer) {
+        if (!answer || answer->type() != rtc::Description::Type::Answer)
+        {
             pc->setLocalDescription(rtc::Description::Type::Answer);
         }
 
@@ -155,31 +157,50 @@ std::shared_ptr<Client> createPeerConnection(const rtc::Configuration &config,
                                              std::weak_ptr<rtc::WebSocket> wws,
                                              std::string id)
 {
+    SOCKET video_out = socket(AF_INET, SOCK_DGRAM, 0);
+    SOCKET audio_out = socket(AF_INET, SOCK_DGRAM, 0);
+
+    struct sockaddr_in video_addr = {};
+    video_addr.sin_family = AF_INET;
+    video_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    video_addr.sin_port = htons(7000);
+
+    struct sockaddr_in audio_addr = {};
+    audio_addr.sin_family = AF_INET;
+    audio_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    audio_addr.sin_port = htons(7001);
+
     auto pc = std::make_shared<rtc::PeerConnection>(config);
 
     auto client = std::make_shared<Client>(pc);
 
-    pc->onTrack([client](std::shared_ptr<rtc::Track> track) {
+    pc->onTrack([client, video_out, video_addr, audio_out, audio_addr](std::shared_ptr<rtc::Track> track)
+                {
         std::cout << "[Alice] Track recebida! Mid: " << track->mid()
                   << ", Tipo: " << track->description().type() << std::endl;
 
         client->remoteTracks.push_back(track); // <-- Guarde a referência
 
-        track->onMessage([](rtc::message_variant msg) {
-            if (std::holds_alternative<rtc::binary>(msg)) {
-                auto data = std::get<rtc::binary>(msg);
-                std::cout << "[Alice] Pacote recebido (" << data.size() << " bytes)" << std::endl;
-                std::cout << "[Alice] Pacote: ";
-                for (auto byte : data) {
-                    std::cout << std::hex << static_cast<int>(byte) << " ";
+        if (track->description().type() == "video") {
+            track->onMessage([video_out, video_addr](rtc::message_variant msg) {
+                if (std::holds_alternative<rtc::binary>(msg)) {
+                    auto& data = std::get<rtc::binary>(msg);
+                    sendto(video_out, reinterpret_cast<const char*>(data.data()), data.size(), 0,
+                           reinterpret_cast<const sockaddr*>(&video_addr), sizeof(video_addr));
                 }
-                std::cout << std::dec << std::endl;
-            }
-        });
-    });
+            });
+        } else if (track->description().type() == "audio") {
+            track->onMessage([audio_out, audio_addr](rtc::message_variant msg) {
+                if (std::holds_alternative<rtc::binary>(msg)) {
+                    auto& data = std::get<rtc::binary>(msg);
+                    sendto(audio_out, reinterpret_cast<const char*>(data.data()), data.size(), 0,
+                           reinterpret_cast<const sockaddr*>(&audio_addr), sizeof(audio_addr));
+                }
+            });
+        } });
 
     pc->onStateChange([id](rtc::PeerConnection::State state)
-    {
+                      {
         std::cout << "State: " << state << std::endl;
         if (state == rtc::PeerConnection::State::Disconnected ||
             state == rtc::PeerConnection::State::Failed ||
@@ -188,11 +209,10 @@ std::shared_ptr<Client> createPeerConnection(const rtc::Configuration &config,
             MainThread.dispatch([id]() {
                 clients.erase(id);
             });
-        }
-    });
+        } });
 
     pc->onGatheringStateChange([wpc = make_weak_ptr(pc), id, wws](rtc::PeerConnection::GatheringState state)
-    {
+                               {
         std::cout << "Gathering State: " << state << std::endl;
         if (state == rtc::PeerConnection::GatheringState::Complete)
         {
@@ -210,8 +230,7 @@ std::shared_ptr<Client> createPeerConnection(const rtc::Configuration &config,
                 std::cout << "[Alice] Enviando SDP tipo: " << description->typeString() << std::endl;
                 std::cout << "[Alice] SDP enviado:\n" << std::string(description.value()) << std::endl;
             }
-        }
-    });
+        } });
 
     return client;
 }

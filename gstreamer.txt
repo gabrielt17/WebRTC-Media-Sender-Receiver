@@ -1,3 +1,11 @@
+Envia:
+
 gst-launch-1.0 filesrc location=~/walk_pretender.mp4 ! decodebin name=demux \
 demux. ! queue ! videoconvert ! x264enc tune=zerolatency bitrate=800 speed-preset=ultrafast ! video/x-h264,profile=baseline ! rtph264pay config-interval=1 pt=96 ! udpsink host=127.0.0.1 port=6000 \
 demux. ! queue ! audioconvert ! audioresample ! opusenc bitrate=96000 ! rtpopuspay pt=97 ! udpsink host=127.0.0.1 port=6001
+
+Recebe:
+
+gst-launch-1.0 \
+  udpsrc port=7000 caps="application/x-rtp,media=video,encoding-name=H264,payload=96" ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink \
+  udpsrc port=7001 caps="application/x-rtp,media=audio,encoding-name=OPUS,payload=97" ! rtpopusdepay ! opusdec ! audioconvert ! autoaudiosink

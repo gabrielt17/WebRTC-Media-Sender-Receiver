@@ -9,3 +9,12 @@ Recebe:
 gst-launch-1.0 \
   udpsrc port=7000 caps="application/x-rtp,media=video,encoding-name=H264,payload=96" ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink \
   udpsrc port=7001 caps="application/x-rtp,media=audio,encoding-name=OPUS,payload=97" ! rtpopusdepay ! opusdec ! audioconvert ! autoaudiosink
+
+Recebe vídeo, apenas:
+
+gst-launch-1.0 udpsrc port=7000 caps="application/x-rtp,media=video,encoding-name=H264,payload=96" ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
+
+Recebe áudio, apenas:
+
+gst-launch-1.0 \
+  udpsrc port=7001 caps="application/x-rtp,media=audio,encoding-name=OPUS,payload=97" ! rtpopusdepay ! opusdec ! audioconvert ! autoaudiosink sync=true

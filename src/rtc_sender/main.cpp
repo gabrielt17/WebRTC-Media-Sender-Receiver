@@ -15,7 +15,7 @@ typedef int SOCKET;
 
 using json = nlohmann::json;
 
-const int BUFFER_SIZE = 2048; // Good size to receive ethernet packages
+const int BUFFER_SIZE = 8192; // Good size to receive ethernet packages
 
 std::atomic<bool> running{true};
 
@@ -130,7 +130,6 @@ std::shared_ptr<Client> createPeerConnection(const rtc::Configuration &config,
 
     int VideoRcvBufSize = 512*1024;
     int AudioRcvBufSize = 128*1024;
-    int sdpRcvBufSize = 65536; // 64 KB (suficiente para SDP)
     setsockopt(video_socket, SOL_SOCKET, SO_RCVBUF, reinterpret_cast<const char *>(&VideoRcvBufSize), sizeof(VideoRcvBufSize));
     setsockopt(audio_socket, SOL_SOCKET, SO_RCVBUF, reinterpret_cast<const char *>(&AudioRcvBufSize), sizeof(AudioRcvBufSize));
 

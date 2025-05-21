@@ -1,0 +1,3 @@
+/home/gabrielt/Documentos/Códigos/RTC/RTC_Receiver/build/CMakeFiles/RTC_Receiver.dir
+/home/gabrielt/Documentos/Códigos/RTC/RTC_Receiver/build/CMakeFiles/edit_cache.dir
+/home/gabrielt/Documentos/Códigos/RTC/RTC_Receiver/build/CMakeFiles/rebuild_cache.dir

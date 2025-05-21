@@ -1,0 +1,5 @@
+# ninja log v6
+1	845	1745951628386024957	CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o	333dde233e86f92
+2	1423	1745951628386665159	CMakeFiles/RTC_Sender.dir/helpers.cpp.o	af06de0d02a019b
+2	2584	1746017743502791757	CMakeFiles/RTC_Sender.dir/main.cpp.o	2586b18cab1b490
+2584	2746	1746017746084800472	RTC_Sender	56656fcfe2946e7e

@@ -1,5 +1,0 @@
-# ninja log v6
-1	723	1745951605250888243	CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o	c51bc72f9511b234
-1	1232	1745951605251025526	CMakeFiles/RTC_Receiver.dir/helpers.cpp.o	d85ffbf8de58b994
-1	2685	1746019995968139430	CMakeFiles/RTC_Receiver.dir/main.cpp.o	36dec8d51ca18e22
-2685	2831	1746019998653167421	RTC_Receiver	a47e013e967bcf4

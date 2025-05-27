@@ -20,7 +20,7 @@ const int BUFFER_SIZE = 8192; // Good size to receive ethernet packages
 std::atomic<bool> running{true};
 
 std::string localId = "bob";
-const std::string defaultIPAddress = "127.0.0.1";
+const std::string defaultIPAddress = "192.168.0.114";
 const uint16_t defaultPort = 8000;
 std::string ip_address = defaultIPAddress;
 uint16_t port = defaultPort;

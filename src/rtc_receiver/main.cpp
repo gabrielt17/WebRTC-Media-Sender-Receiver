@@ -24,7 +24,7 @@ typedef int SOCKET;
 using json = nlohmann::json;
 
 std::string localId = "alice";
-const std::string defaultIPAddress = "127.0.0.1";
+const std::string defaultIPAddress = "192.168.0.114";
 const uint16_t defaultPort = 8000;
 std::string ip_address = defaultIPAddress;
 uint16_t port = defaultPort;
@@ -172,7 +172,7 @@ std::shared_ptr<Client> createPeerConnection(const rtc::Configuration &config,
     audio_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
     audio_addr.sin_port = htons(7001);
 
-    int VideoRcvBufSize = 512*1024;
+    int VideoRcvBufSize = 256*1024;
     int AudioRcvBufSize = 128*1024;
     setsockopt(video_out, SOL_SOCKET, SO_RCVBUF, reinterpret_cast<const char *>(&VideoRcvBufSize), sizeof(VideoRcvBufSize));
     setsockopt(audio_out, SOL_SOCKET, SO_RCVBUF, reinterpret_cast<const char *>(&AudioRcvBufSize), sizeof(AudioRcvBufSize));

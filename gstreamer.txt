@@ -18,3 +18,18 @@ Recebe áudio, apenas:
 
 gst-launch-1.0 \
   udpsrc port=7001 caps="application/x-rtp,media=audio,encoding-name=OPUS,payload=97" ! rtpopusdepay ! opusdec ! audioconvert ! autoaudiosink sync=true
+
+
+Atualizado envia:
+
+gst-launch-1.0 filesrc location=~/walk_pretender.mp4 ! decodebin name=demux \
+demux. ! queue ! videoconvert ! x264enc tune=zerolatency bitrate=316 speed-preset=ultrafast key-int-max=30 ! video/x-h264,profile=baseline ! rtph264pay config-interval=1 pt=96 ! udpsink host=127.0.0.1 port=6000 buffer-size=524288 sync=true async=false \
+demux. ! queue ! audioconvert ! audioresample ! opusenc bitrate=96000 ! rtpopuspay pt=97 ! udpsink host=127.0.0.1 port=6001 buffer-size=524288 sync=true async=false
+
+Atualizado recebe:
+
+gst-launch-1.0 \
+  udpsrc port=7000 buffer-size=524288 caps="application/x-rtp,media=video,encoding-name=H264,payload=96" ! \
+  queue ! rtph264depay ! queue ! avdec_h264 ! queue ! videoconvert ! queue ! autovideosink \
+  udpsrc port=7001 buffer-size=524288 caps="application/x-rtp,media=audio,encoding-name=OPUS,payload=97" ! \
+  queue ! rtpopusdepay ! queue ! opusdec ! queue ! audioconvert ! queue ! autoaudiosink sync=true

@@ -30,7 +30,9 @@ std::string ip_address = defaultIPAddress;
 uint16_t port = defaultPort;
 
 template <class T>
-std::weak_ptr<T> make_weak_ptr(std::shared_ptr<T> ptr) { return std::weak_ptr<T>(ptr); }
+std::weak_ptr<T> make_weak_ptr(std::shared_ptr<T> ptr) {
+    return std::weak_ptr<T>(ptr);
+}
 
 /// all connected clients
 std::unordered_map<std::string, std::shared_ptr<Client>> clients{};

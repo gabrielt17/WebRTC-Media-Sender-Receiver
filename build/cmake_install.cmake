@@ -1,4 +1,4 @@
-# Install script for directory: /home/gabrielt/Documentos/Códigos/webrtc_ws
+# Install script for directory: /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,16 +44,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_receiver/cmake_install.cmake")
-  include("/home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_sender/cmake_install.cmake")
-  include("/home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_video_sender/cmake_install.cmake")
+  include("/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_receiver/cmake_install.cmake")
+  include("/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_sender/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/gabrielt/Documentos/Códigos/webrtc_ws/build/install_local_manifest.txt"
+  file(WRITE "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -69,6 +68,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/gabrielt/Documentos/Códigos/webrtc_ws/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

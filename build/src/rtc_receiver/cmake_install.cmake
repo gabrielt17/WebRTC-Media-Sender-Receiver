@@ -1,4 +1,4 @@
-# Install script for directory: /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver
+# Install script for directory: /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_receiver/install_local_manifest.txt"
+  file(WRITE "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_receiver/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

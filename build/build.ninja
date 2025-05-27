@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/gabrielt/Documentos/Códigos/webrtc_ws/build/
+cmake_ninja_workdir = /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
+  COMMAND = cd /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver -B/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
+  COMMAND = cd /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver -B/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -66,7 +66,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/gabrielt/Documentos/Códigos/webrtc_ws/CMakeLists.txt
+# /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -78,7 +78,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_RTC_Receiver: phony || .
 
-build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o: CXX_COMPILER__RTC_Receiver_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/main.cpp || cmake_object_order_depends_target_RTC_Receiver
+build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o: CXX_COMPILER__RTC_Receiver_unscanned_Debug /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/main.cpp || cmake_object_order_depends_target_RTC_Receiver
   CONFIG = Debug
   DEFINES = -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
   DEP_FILE = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o.d
@@ -86,8 +86,10 @@ build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o: CXX_COMPILER__RTC
   INCLUDES = -isystem /usr/include/ixwebsocket
   OBJECT_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
   OBJECT_FILE_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
+  TARGET_COMPILE_PDB = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/
+  TARGET_PDB = src/rtc_receiver/RTC_Receiver.pdb
 
-build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o: CXX_COMPILER__RTC_Receiver_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/dispatchqueue.cpp || cmake_object_order_depends_target_RTC_Receiver
+build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o: CXX_COMPILER__RTC_Receiver_unscanned_Debug /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/dispatchqueue.cpp || cmake_object_order_depends_target_RTC_Receiver
   CONFIG = Debug
   DEFINES = -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
   DEP_FILE = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o.d
@@ -95,8 +97,10 @@ build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o: CXX_COMP
   INCLUDES = -isystem /usr/include/ixwebsocket
   OBJECT_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
   OBJECT_FILE_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
+  TARGET_COMPILE_PDB = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/
+  TARGET_PDB = src/rtc_receiver/RTC_Receiver.pdb
 
-build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o: CXX_COMPILER__RTC_Receiver_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/helpers.cpp || cmake_object_order_depends_target_RTC_Receiver
+build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o: CXX_COMPILER__RTC_Receiver_unscanned_Debug /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/helpers.cpp || cmake_object_order_depends_target_RTC_Receiver
   CONFIG = Debug
   DEFINES = -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
   DEP_FILE = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o.d
@@ -104,6 +108,8 @@ build src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o: CXX_COMPILER__
   INCLUDES = -isystem /usr/include/ixwebsocket
   OBJECT_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
   OBJECT_FILE_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
+  TARGET_COMPILE_PDB = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/
+  TARGET_PDB = src/rtc_receiver/RTC_Receiver.pdb
 
 
 # =============================================================================
@@ -122,15 +128,16 @@ build src/rtc_receiver/RTC_Receiver: CXX_EXECUTABLE_LINKER__RTC_Receiver_Debug s
   OBJECT_DIR = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/
   TARGET_FILE = src/rtc_receiver/RTC_Receiver
-  TARGET_PDB = RTC_Receiver.dbg
+  TARGET_PDB = src/rtc_receiver/RTC_Receiver.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build src/rtc_receiver/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_receiver && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
+  COMMAND = cd /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_receiver && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver -B/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -142,7 +149,7 @@ build src/rtc_receiver/edit_cache: phony src/rtc_receiver/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build src/rtc_receiver/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_receiver && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
+  COMMAND = cd /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_receiver && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver -B/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -151,7 +158,7 @@ build src/rtc_receiver/rebuild_cache: phony src/rtc_receiver/CMakeFiles/rebuild_
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/gabrielt/Documentos/Códigos/webrtc_ws/CMakeLists.txt
+# /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -163,7 +170,7 @@ build src/rtc_receiver/rebuild_cache: phony src/rtc_receiver/CMakeFiles/rebuild_
 
 build cmake_object_order_depends_target_RTC_Sender: phony || .
 
-build src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o: CXX_COMPILER__RTC_Sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/main.cpp || cmake_object_order_depends_target_RTC_Sender
+build src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o: CXX_COMPILER__RTC_Sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/main.cpp || cmake_object_order_depends_target_RTC_Sender
   CONFIG = Debug
   DEFINES = -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
   DEP_FILE = src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o.d
@@ -171,8 +178,10 @@ build src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o: CXX_COMPILER__RTC_Sen
   INCLUDES = -isystem /usr/include/ixwebsocket
   OBJECT_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
   OBJECT_FILE_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
+  TARGET_COMPILE_PDB = src/rtc_sender/CMakeFiles/RTC_Sender.dir/
+  TARGET_PDB = src/rtc_sender/RTC_Sender.pdb
 
-build src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o: CXX_COMPILER__RTC_Sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/dispatchqueue.cpp || cmake_object_order_depends_target_RTC_Sender
+build src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o: CXX_COMPILER__RTC_Sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/dispatchqueue.cpp || cmake_object_order_depends_target_RTC_Sender
   CONFIG = Debug
   DEFINES = -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
   DEP_FILE = src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o.d
@@ -180,8 +189,10 @@ build src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o: CXX_COMPILER
   INCLUDES = -isystem /usr/include/ixwebsocket
   OBJECT_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
   OBJECT_FILE_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
+  TARGET_COMPILE_PDB = src/rtc_sender/CMakeFiles/RTC_Sender.dir/
+  TARGET_PDB = src/rtc_sender/RTC_Sender.pdb
 
-build src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o: CXX_COMPILER__RTC_Sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/helpers.cpp || cmake_object_order_depends_target_RTC_Sender
+build src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o: CXX_COMPILER__RTC_Sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/helpers.cpp || cmake_object_order_depends_target_RTC_Sender
   CONFIG = Debug
   DEFINES = -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
   DEP_FILE = src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o.d
@@ -189,6 +200,8 @@ build src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o: CXX_COMPILER__RTC_
   INCLUDES = -isystem /usr/include/ixwebsocket
   OBJECT_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
   OBJECT_FILE_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
+  TARGET_COMPILE_PDB = src/rtc_sender/CMakeFiles/RTC_Sender.dir/
+  TARGET_PDB = src/rtc_sender/RTC_Sender.pdb
 
 
 # =============================================================================
@@ -207,15 +220,16 @@ build src/rtc_sender/RTC_Sender: CXX_EXECUTABLE_LINKER__RTC_Sender_Debug src/rtc
   OBJECT_DIR = src/rtc_sender/CMakeFiles/RTC_Sender.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/rtc_sender/CMakeFiles/RTC_Sender.dir/
   TARGET_FILE = src/rtc_sender/RTC_Sender
-  TARGET_PDB = RTC_Sender.dbg
+  TARGET_PDB = src/rtc_sender/RTC_Sender.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build src/rtc_sender/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_sender && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
+  COMMAND = cd /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_sender && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver -B/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -227,78 +241,12 @@ build src/rtc_sender/edit_cache: phony src/rtc_sender/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/rtc_sender/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_sender && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
+  COMMAND = cd /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_sender && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver -B/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
 build src/rtc_sender/rebuild_cache: phony src/rtc_sender/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/gabrielt/Documentos/Códigos/webrtc_ws/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for EXECUTABLE target datachannel-media-sender
-
-
-#############################################
-# Order-only phony target for datachannel-media-sender
-
-build cmake_object_order_depends_target_datachannel-media-sender: phony || .
-
-build src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/main.cpp.o: CXX_COMPILER__datachannel-media-sender_unscanned_Debug /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_video_sender/main.cpp || cmake_object_order_depends_target_datachannel-media-sender
-  CONFIG = Debug
-  DEFINES = -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1
-  DEP_FILE = src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir
-  OBJECT_FILE_DIR = src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target datachannel-media-sender
-
-
-#############################################
-# Link the executable src/rtc_video_sender/media-sender
-
-build src/rtc_video_sender/media-sender: CXX_EXECUTABLE_LINKER__datachannel-media-sender_Debug src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/main.cpp.o | /usr/lib/libdatachannel.so.0.22.6
-  CONFIG = Debug
-  DEP_FILE = src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/link.d
-  FLAGS = -g
-  LINK_FLAGS = -Xlinker --dependency-file=src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/link.d
-  LINK_LIBRARIES = /usr/lib/libdatachannel.so.0.22.6
-  OBJECT_DIR = src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = src/rtc_video_sender/media-sender
-  TARGET_PDB = media-sender.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build src/rtc_video_sender/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_video_sender && /usr/bin/ccmake -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
-  DESC = Running CMake cache editor...
-  pool = console
-  restat = 1
-
-build src/rtc_video_sender/edit_cache: phony src/rtc_video_sender/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build src/rtc_video_sender/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_video_sender && /usr/bin/cmake --regenerate-during-build -S/home/gabrielt/Documentos/Códigos/webrtc_ws -B/home/gabrielt/Documentos/Códigos/webrtc_ws/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src/rtc_video_sender/rebuild_cache: phony src/rtc_video_sender/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
@@ -307,40 +255,29 @@ build RTC_Receiver: phony src/rtc_receiver/RTC_Receiver
 
 build RTC_Sender: phony src/rtc_sender/RTC_Sender
 
-build datachannel-media-sender: phony src/rtc_video_sender/media-sender
-
-build media-sender: phony src/rtc_video_sender/media-sender
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: /home/gabrielt/Documentos/Códigos/webrtc_ws/build
+# Folder: /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build
 
-build all: phony src/rtc_receiver/all src/rtc_sender/all src/rtc_video_sender/all
+build all: phony src/rtc_receiver/all src/rtc_sender/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_receiver
+# Folder: /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_receiver
 
 build src/rtc_receiver/all: phony src/rtc_receiver/RTC_Receiver
 
 # =============================================================================
 
 #############################################
-# Folder: /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_sender
+# Folder: /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_sender
 
 build src/rtc_sender/all: phony src/rtc_sender/RTC_Sender
-
-# =============================================================================
-
-#############################################
-# Folder: /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_video_sender
-
-build src/rtc_video_sender/all: phony src/rtc_video_sender/media-sender
 
 # =============================================================================
 # Built-in targets
@@ -349,14 +286,14 @@ build src/rtc_video_sender/all: phony src/rtc_video_sender/media-sender
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/gabrielt/Documentos/Códigos/webrtc_ws/build/cmake_install.cmake /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_receiver/cmake_install.cmake /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_sender/cmake_install.cmake /home/gabrielt/Documentos/Códigos/webrtc_ws/build/src/rtc_video_sender/cmake_install.cmake: RERUN_CMAKE | /home/gabrielt/Documentos/Códigos/webrtc_ws/CMakeLists.txt /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/CMakeLists.txt /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/CMakeLists.txt /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_video_sender/CMakeLists.txt /usr/lib/cmake/LibDataChannel/LibDataChannelConfig.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelConfigVersion.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets-none.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-config.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets-noconfig.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.0.2-dirty/CMakeCCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeSystem.cmake
+build build.ninja /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/cmake_install.cmake /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_receiver/cmake_install.cmake /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build/src/rtc_sender/cmake_install.cmake: RERUN_CMAKE | /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/CMakeLists.txt /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/CMakeLists.txt /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/CMakeLists.txt /usr/lib/cmake/LibDataChannel/LibDataChannelConfig.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelConfigVersion.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets-none.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-config.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets-noconfig.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets.cmake /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.0.2-dirty/CMakeCCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/gabrielt/Documentos/Códigos/webrtc_ws/CMakeLists.txt /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/CMakeLists.txt /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/CMakeLists.txt /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_video_sender/CMakeLists.txt /usr/lib/cmake/LibDataChannel/LibDataChannelConfig.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelConfigVersion.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets-none.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-config.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets-noconfig.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.0.2-dirty/CMakeCCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeSystem.cmake: phony
+build /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/CMakeLists.txt /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/CMakeLists.txt /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/CMakeLists.txt /usr/lib/cmake/LibDataChannel/LibDataChannelConfig.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelConfigVersion.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets-none.cmake /usr/lib/cmake/LibDataChannel/LibDataChannelTargets.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-config.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets-noconfig.cmake /usr/lib/cmake/ixwebsocket/ixwebsocket-targets.cmake /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-C.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.0.2-dirty/CMakeCCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake CMakeFiles/4.0.2-dirty/CMakeSystem.cmake: phony
 
 
 #############################################

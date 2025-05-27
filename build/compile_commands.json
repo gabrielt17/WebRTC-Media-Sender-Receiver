@@ -1,44 +1,38 @@
 [
 {
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/main.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/main.cpp",
+  "directory": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build",
+  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o -c /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/main.cpp",
+  "file": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/main.cpp",
   "output": "src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/main.cpp.o"
 },
 {
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/dispatchqueue.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/dispatchqueue.cpp",
+  "directory": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build",
+  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o -c /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/dispatchqueue.cpp",
+  "file": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/dispatchqueue.cpp",
   "output": "src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/dispatchqueue.cpp.o"
 },
 {
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/helpers.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_receiver/helpers.cpp",
+  "directory": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build",
+  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o -c /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/helpers.cpp",
+  "file": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_receiver/helpers.cpp",
   "output": "src/rtc_receiver/CMakeFiles/RTC_Receiver.dir/helpers.cpp.o"
 },
 {
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/main.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/main.cpp",
+  "directory": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build",
+  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o -c /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/main.cpp",
+  "file": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/main.cpp",
   "output": "src/rtc_sender/CMakeFiles/RTC_Sender.dir/main.cpp.o"
 },
 {
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/dispatchqueue.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/dispatchqueue.cpp",
+  "directory": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build",
+  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o -c /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/dispatchqueue.cpp",
+  "file": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/dispatchqueue.cpp",
   "output": "src/rtc_sender/CMakeFiles/RTC_Sender.dir/dispatchqueue.cpp.o"
 },
 {
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/helpers.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_sender/helpers.cpp",
+  "directory": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/build",
+  "command": "/usr/bin/clang++ -DIXWEBSOCKET_USE_OPEN_SSL -DIXWEBSOCKET_USE_TLS -DIXWEBSOCKET_USE_ZLIB -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -isystem /usr/include/ixwebsocket -g -std=gnu++17 -o src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o -c /home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/helpers.cpp",
+  "file": "/home/gabrielt/Documentos/Códigos/WebRTC-Media-Sender-Receiver/src/rtc_sender/helpers.cpp",
   "output": "src/rtc_sender/CMakeFiles/RTC_Sender.dir/helpers.cpp.o"
-},
-{
-  "directory": "/home/gabrielt/Documentos/Códigos/webrtc_ws/build",
-  "command": "/usr/bin/clang++ -DRTC_ENABLE_MEDIA=1 -DRTC_ENABLE_WEBSOCKET=1 -g -std=gnu++17 -o src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/main.cpp.o -c /home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_video_sender/main.cpp",
-  "file": "/home/gabrielt/Documentos/Códigos/webrtc_ws/src/rtc_video_sender/main.cpp",
-  "output": "src/rtc_video_sender/CMakeFiles/datachannel-media-sender.dir/main.cpp.o"
 }
 ]

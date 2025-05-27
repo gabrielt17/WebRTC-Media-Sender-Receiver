@@ -20,7 +20,7 @@ const int BUFFER_SIZE = 8192; // Good size to receive ethernet packages
 std::atomic<bool> running{true};
 
 std::string localId = "bob";
-const std::string defaultIPAddress = "127.0.0.1";
+const std::string defaultIPAddress = "192.168.0.114";
 const uint16_t defaultPort = 8000;
 std::string ip_address = defaultIPAddress;
 uint16_t port = defaultPort;
@@ -128,10 +128,17 @@ std::shared_ptr<Client> createPeerConnection(const rtc::Configuration &config,
     audioAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
     audioAddr.sin_port = htons(6001);
 
-    int VideoRcvBufSize = 512*1024;
-    int AudioRcvBufSize = 128*1024;
+    int VideoRcvBufSize = 512 * 1024; // 512 KB para o buffer de recepção de vídeo
+    int AudioRcvBufSize = 512 * 1024; // 512 KB para o buffer de recepção de áudio
+
     setsockopt(video_socket, SOL_SOCKET, SO_RCVBUF, reinterpret_cast<const char *>(&VideoRcvBufSize), sizeof(VideoRcvBufSize));
     setsockopt(audio_socket, SOL_SOCKET, SO_RCVBUF, reinterpret_cast<const char *>(&AudioRcvBufSize), sizeof(AudioRcvBufSize));
+
+    int VideoSndBufSize = 256 * 1024; // 256 KB para o buffer de envio de vídeo
+    int AudioSndBufSize = 128 * 1024; // 128 KB para o buffer de envio de áudio
+
+    setsockopt(video_socket, SOL_SOCKET, SO_SNDBUF, reinterpret_cast<const char *>(&VideoSndBufSize), sizeof(VideoSndBufSize));
+    setsockopt(audio_socket, SOL_SOCKET, SO_SNDBUF, reinterpret_cast<const char *>(&AudioSndBufSize), sizeof(AudioSndBufSize));
 
 
     if (bind(video_socket, reinterpret_cast<const sockaddr *>(&videoAddr), sizeof(videoAddr)) < 0) {

@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src/rtc_receiver",
+					"jsonFile" : "directory-src.rtc_receiver-Debug-889af0e7fed5ec09795f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src/rtc_receiver",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/rtc_sender",
+					"jsonFile" : "directory-src.rtc_sender-Debug-0b9a66d006170c75de98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "src/rtc_sender",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "WebRTC_Workspace"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "RTC_Receiver",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "RTC_Sender",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "RTC_Receiver::@48d19d8f92a4809913f0",
+					"jsonFile" : "target-RTC_Receiver-Debug-973954a70e2f19aebfeb.json",
+					"name" : "RTC_Receiver",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "RTC_Sender::@8cbb6387ea6432696438",
+					"jsonFile" : "target-RTC_Sender-Debug-929912752310b4f5cc07.json",
+					"name" : "RTC_Sender",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/gabrielt/Documentos/C\u00f3digos/WebRTC-Media-Sender-Receiver/build",
+		"source" : "/home/gabrielt/Documentos/C\u00f3digos/WebRTC-Media-Sender-Receiver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

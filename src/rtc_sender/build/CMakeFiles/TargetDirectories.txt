@@ -1,3 +1,0 @@
-/home/gabrielt/Documentos/Códigos/RTC/RTC_Sender/build/CMakeFiles/RTC_Sender.dir
-/home/gabrielt/Documentos/Códigos/RTC/RTC_Sender/build/CMakeFiles/edit_cache.dir
-/home/gabrielt/Documentos/Códigos/RTC/RTC_Sender/build/CMakeFiles/rebuild_cache.dir
